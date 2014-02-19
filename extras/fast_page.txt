@@ -1,0 +1,11 @@
+Pasos para copiar fast user a proyecto nuevo
+
+1-Copiar Modelo (Page)
+2-Copiar Controlador (PagesController)
+3-Copiar la carpeta de las vistas (Pages)
+4-Copiar el archivo page_schema en app/Config/Schema
+
+5-Desde la carpeta app/ abrir la consola y ejecutar el comando:
+		cake schema create --file schema_fastpage
+  para crear las tablas de Page.
+6-Cambiar en app/Config/routes.php para que no apunte a la action display, sino a la home. 
